@@ -1,13 +1,12 @@
 
 import Layout from "./layout";
+import HomePage from "./pages/homepage";
+
 function App() {
   return (
     <div className="App">
       <Layout>
-
-
-        <h2>Hellow World</h2>
-
+        <HomePage />
       </Layout>
     </div>
   );

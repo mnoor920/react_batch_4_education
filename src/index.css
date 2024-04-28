@@ -70,3 +70,75 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
+
+.banner {
+  background: #FDF8EE;
+  padding: 50px 0px;
+  margin-bottom: 30px;
+}
+
+.banner_inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.banner_inner .content h2 {
+  font-family: Roboto;
+  font-size: 69px;
+  font-weight: 800;
+  line-height: 93.15px;
+  text-align: left;
+  color: #000;
+}
+
+.banner_inner .content h2 span {
+  color: #FF7426;
+}
+
+.banner_inner .content p {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34.2px;
+  text-align: left;
+  color: #8A8A8A;
+}
+
+.banner_inner .content .search_box {
+  position: relative;
+}
+
+.banner_inner .content .search_box input {
+  width: 100%;
+  height: 50px;
+  background: #FFFFFF;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: left;
+  color: #0F335E;
+  padding: 5px 30px;
+}
+
+.banner_inner .content .search_box button {
+  height: 45px;
+  background: #4D2C5E;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 29.3px;
+  text-align: left;
+  color: #FFFFFF;
+  border-radius: 50px;
+  border: none;
+  padding: 5px 30px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
