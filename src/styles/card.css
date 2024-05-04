@@ -1,0 +1,46 @@
+.skills_container {
+    max-width: 1000px;
+    margin: auto;
+    background: #4D2C5E;
+    border-radius: 15px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.item_grid {
+    display: flex;
+    gap: 20px;
+}
+
+.item_grid .img {
+    background: #FFFFFF33;
+    border-radius: 20px;
+    padding: 15px;
+    width: 220px;
+    height: 90px;
+}
+
+.item_grid .img img {
+    width: 100%;
+}
+
+.item_grid .content h3 {
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.item_grid .content p {
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #FFFFFF99;
+
+}
