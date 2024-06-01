@@ -44,3 +44,9 @@
     color: #FFFFFF99;
 
 }
+
+@media screen and (max-width:768px) {
+    .skills_container {
+        grid-template-columns: 1fr;
+    }
+}

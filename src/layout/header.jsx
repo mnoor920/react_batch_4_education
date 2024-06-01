@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
+import { FaBars } from "react-icons/fa6";
+import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
+
+    const [showMenu, setShowMenu] = useState(false)
+
+
+
+
     return (
         <div className="page_width">
             <header>
                 <div className="logo">
                     <img src={Logo} alt="" />
                 </div>
-                <div className="nav_links">
+                <div className="bars_menu" onClick={() => setShowMenu(!showMenu)} >
+                    {showMenu == true ? <FaTimes /> : <FaBars />}
+                </div>
+                <div className={`nav_links ${showMenu == true ? 'show_menu' : 'hide_menu'}`}>
                     <ul>
                         <li>
                             <Link to="/">Home</Link>

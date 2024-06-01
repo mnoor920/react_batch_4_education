@@ -5,6 +5,8 @@ import AboutUs from "./pages/aboutUsPage";
 import ContactUs from "./pages/contactUsPage";
 import SignUp from "./pages/signup";
 import { Routes, Route } from 'react-router-dom'
+import JavascriptPractice from "./pages/javascriptPractice";
+import HttpsRequest from "./pages/httpsRequest";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/about_us" exact element={<AboutUs />} />
           <Route path="/services" exact element={<ContactUs />} />
           <Route path="/sign_up" exact element={<SignUp />} />
+          <Route path="/javascript_practice" exact element={<JavascriptPractice />} />
+          <Route path="/https_request" exact element={<HttpsRequest />} />
         </Routes>
         {/* 
         <HomePage />
