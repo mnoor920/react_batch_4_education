@@ -17,15 +17,27 @@ const GetPost = () => {
                 // always executed
             });
     }
+    const [count, setCount] = useState(0);
 
     useEffect(() => {
         getPostData()
-    }, [])
+    }, [count])
+
+
+    useEffect(() => {
+        setTimeout(() => {
+            setCount((count) => count + 1);
+        }, 1000);
+    }, []);
+
 
     console.log("data in respose", data);
 
     return (
         <div>
+
+            <h1>I've rendered {count} times!</h1>
+
             <div className="container_post">
                 {data != null && data?.map((item, index) => {
                     return (

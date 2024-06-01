@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 const ContactUs = () => {
     const [fname, setFname] = useState('')
@@ -8,13 +9,19 @@ const ContactUs = () => {
 
 
     const formData = {
-        first_name: fname,
-        last_name: lname,
-        message: message
+        userId: 0,
+        title: `${fname} ${lname}`,
+        body: message
     }
 
     const handleSubmit = () => {
-        console.log("form Data", formData)
+        axios.post('https://jsonplaceholder.typicode.com/posts', formData)
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     }
 
     return (
